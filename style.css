@@ -2,3 +2,62 @@ html {
   height: 100%;
   width: 100%;
 }
+
+.title {
+  background-color:black;
+  text-align:center;
+  font-family: 'Oswald', sans-serif;
+  color:white;
+  padding:15px;
+  margin-bottom:0px;
+  border-radius: 0px 30px 0px 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.headingBox {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 8px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  border-radius: 0px 0px 0px 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
+  background-color: black;
+}
+
+li {
+  float: center;
+  text-align: center;
+  display: flex;
+  top: 0;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+li a:hover {
+  background-color: #454545;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
