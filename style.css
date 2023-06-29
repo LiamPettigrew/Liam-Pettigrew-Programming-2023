@@ -6,13 +6,13 @@ html {
 }
 
 .title {
-  background-color:black;
-  text-align:center;
+  background-color: black;
+  text-align: center;
   font-family: 'Oswald', sans-serif;
-  color:white;
-  padding:15px;
-  margin-bottom:0px;
-  border-radius: 0px 30px 0px 0px;
+  color: white;
+  padding: 15px;
+  margin-bottom: 0px;
+  border-radius:  0px 30px 0px 0px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -109,3 +109,127 @@ li a:hover {
 
 
 /* INDEX */
+
+.categoryLink {
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 25px 40px;
+  border-width: 3px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: verdana;
+  vertical-align: middle;
+  justify-content: center;
+  float: center;
+  margin: 10px;
+}
+
+.buttonParent {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.geographyLink {
+  background-color: #dedede;
+  color: black;
+}
+
+.geographyLink:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.musicLink {
+  background-color: #d9d9d9;
+  color: black;
+}
+
+.musicLink:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.flagsLink {
+  background-color: #c2c2c2;
+  color: black;
+}
+
+.flagsLink:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.automotiveLink {
+  background-color: #a6a6a6;
+  color: black;
+}
+
+.automotiveLink:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.politicsLink {
+  background-color: #8f8f8f;
+  color: white;
+}
+
+.politicsLink:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.gamingLink {
+  background-color: #808080;
+  color: white;
+}
+
+.gamingLink:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.moviestvLink {
+  background-color: #737373;
+  color: white;
+}
+
+.moviestvLink:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.technologyLink {
+  background-color: #595959;
+  color: white;
+}
+
+.technologyLink:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.celebritiesLink {
+  background-color: #525252;
+  color: white;
+}
+
+.celebritiesLink:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.historyLink {
+  background-color: #212121;
+  color: white;
+}
+
+.historyLink:hover {
+  background-color: #ffffff;
+  color: black;
+}
