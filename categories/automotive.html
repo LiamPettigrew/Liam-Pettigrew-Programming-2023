@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FreeTriviaSet.com</title>
   <link href="../style.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -33,16 +33,13 @@
         <details>
           <summary style="font-weight:bold;">Level 1</summary>
 
-          <div id="display-container">
-              <div class="quizHeader">
-                  <div class="number-of-count">
-                      <span class="number-of-question">1 of 3 questions</span>
-                  </div>
-              </div>
-              <div id="container">
-                  <!-- COMMIT 5 - Questions coming soon... -->
-              </div>
-              <button id="next-button">Next</button>
+          <!-- COMMIT 6 - Created the trial question box with ten questions, 4-choice answers, and shows your results at the end. Connected to Javascript -->
+          <div class="quizContainer">
+            <p id="quizQuestionNumber"></p>
+            <p id="quizQuestion"></p>
+            <div id="quizOptions"></div>
+            <p id="quizResult"></p>
+            <button id="quizNextButton" disabled>Next</button>
           </div>
 
 
@@ -74,7 +71,7 @@
     </div>
   </div>
   
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 
 </html>

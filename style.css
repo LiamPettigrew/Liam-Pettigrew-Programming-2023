@@ -8,7 +8,6 @@ html {
 .title {
   background-color: black;
   text-align: center;
-  font-family: 'Oswald', sans-serif;
   color: white;
   padding: 15px;
   margin-bottom: 0px;
@@ -278,54 +277,85 @@ details summary {
 
 
 
-.start-screen,
-.score-container {
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+#quizQuestionNumber {
+  font-family: verdana;
+  font-size: 14px;
+  border-bottom: 0.3px solid #d6d6d6;
+  text-align: left;
+  padding-bottom: 15px;
 }
 
-button {
+#quizQuestion {
+  padding: 8px;
+  font-family: verdana;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#quizNextButton {
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0px;
   border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-#display-container {
-  background-color: #ffffff;
-  padding: 3.1em 1.8em;
-  width: 80%;
-  max-width: 37.5em;
-  margin: 0 auto;
-  top: 50%;
-  left: 50%;
-  border-radius: 0.6em;
-  margin-top: 70px;
-}
-
-.quizHeader {
-  margin-bottom: 1.8em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 0.6em;
-  border-bottom: 0.1em solid #c0bfd2;
-}
-
-.question {
-  margin-bottom: 1.25em;
-  font-weight: 600;
-}
-
-#next-button {
-  font-size: 13px;
-  margin-top: 1.5em;
-  background-color: #000000;
-  color: #ffffff;
-  padding: 10px 20px;
+  display: block;
   float: right;
+  border-radius: 4px;
+}
+
+#quizNextButton:disabled {
+  background-color: #c2c2c2;
+  margin-top: 10px;
+}
+
+#quizResult {
+  display: block;
+}
+
+.quizContainer {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 65px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#quizOptions {
+  margin-top: 20px;
+}
+
+quizButton {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f7f7f7;
+  border-color: #dedede;
+  color: #000000;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+quizButton:hover {
+  background-color: #e3e3e3;
+}
+
+.correct {
+  background-color: #4caf50;
+}
+
+.incorrect {
+  background-color: #f44336;
 }
