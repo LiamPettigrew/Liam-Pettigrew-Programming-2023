@@ -84,7 +84,7 @@ function loadQuestion() {
 
   quizOptionsElement.innerHTML = "";
   for (var i = 0; i < q.quizOptions.length; i++) {
-    var quizButton = document.createElement("quizButton");
+    var quizButton = document.createElement("button");
     quizButton.textContent = q.quizOptions[i];
     quizButton.addEventListener("click", checkAnswer);
     quizOptionsElement.appendChild(quizButton);
@@ -111,6 +111,7 @@ function checkAnswer(event) {
   }
 
   // COMMIT 6 - Disable all buttons after answering
+  // COMMIT 7 - Fixed the bug where buttons could be infinitely pressed on the same question.
   var buttons = quizOptionsElement.getElementsByTagName("button");
   for (var i = 0; i < buttons.length; i++) {
     buttons[i].disabled = true;
@@ -121,7 +122,7 @@ function checkAnswer(event) {
 
   currentQuestion++;
 
-  if (currentQuestion < trivia.length) {
+  if (currentQuestion < trivia.length + 1) {
     quizNextButton.disabled = false;
   } else {
     showResults();
@@ -129,6 +130,7 @@ function checkAnswer(event) {
 }
 
 // COMMIT 6 - Shows the results after completing quiz.
+// COMMIT 7 - Quiz allows you to press "Finish" before seeing results to see if you got the question correct or incorrect.
 
 function showResults() {
   quizQuestionElement.style.display = "none";
@@ -139,17 +141,21 @@ function showResults() {
 }
 
 function nextQuestion() {
-  loadQuestion();
-  quizNextButton.disabled = true;
-
-  // COMMIT 6 - Enable buttons for the new quizQuestion
-  var buttons = quizOptionsElement.getElementsByTagName("quizButton");
-  for (var i = 0; i < buttons.length; i++) {
-    buttons[i].disabled = false;
-    buttons[i].classList.remove("correct", "incorrect");
+  if (currentQuestion < trivia.length) {
+    loadQuestion();
+    quizNextButton.disabled = true;
+    
+    // COMMIT 6 - Enable buttons for the new quizQuestion
+    var buttons = quizOptionsElement.getElementsByTagName("button");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].disabled = false;
+      buttons[i].classList.remove("correct", "incorrect");
+    }
+    
+    quizResultElement.textContent = "";
+  } else {
+    showResults();
   }
-
-  quizResultElement.textContent = "";
 }
 
 loadQuestion();

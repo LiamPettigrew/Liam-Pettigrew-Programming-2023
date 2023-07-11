@@ -334,8 +334,9 @@ details summary {
   margin-top: 20px;
 }
 
-quizButton {
+button {
   display: block;
+  width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   background-color: #f7f7f7;
@@ -348,14 +349,24 @@ quizButton {
   transition: background-color 0.2s ease;
 }
 
-quizButton:hover {
+button:hover {
   background-color: #e3e3e3;
 }
 
+.correct:hover {
+  background-color: #49a24c;
+}
+
 .correct {
-  background-color: #4caf50;
+  background-color: #5fd363;
+  color: white;
+}
+
+.incorrect:hover {
+  background-color: #bd372e;
 }
 
 .incorrect {
   background-color: #f44336;
+  color: white;
 }
