@@ -302,8 +302,6 @@ details summary {
   padding-right: 20px;
   margin-top: 0px;
   border: none;
-  display: block;
-  float: right;
   border-radius: 4px;
 }
 
@@ -326,8 +324,9 @@ details summary {
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
-  padding-bottom: 65px;
+  padding-bottom: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: verdana;
 }
 
 #quizOptions {
@@ -354,19 +353,19 @@ button:hover {
 }
 
 .correct:hover {
-  background-color: #49a24c;
+  background-color: #82c986;
 }
 
 .correct {
-  background-color: #5fd363;
-  color: white;
+  background-color: #a4d0a6;
+  border-color: #4ab04a;
 }
 
 .incorrect:hover {
-  background-color: #bd372e;
+  background-color: #ff8d85;
 }
 
 .incorrect {
-  background-color: #f44336;
-  color: white;
+  background-color: #ffa9a3;
+  border-color: #e02c1f;
 }

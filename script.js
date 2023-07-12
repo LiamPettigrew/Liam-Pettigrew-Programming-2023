@@ -68,6 +68,8 @@ var trivia = [
 
 var currentQuestion = 0;
 var score = 0;
+var timerEnabled = false;
+var timerInterval;
 
 var quizQuestionNumberElement = document.getElementById("quizQuestionNumber")
 var quizQuestionElement = document.getElementById("quizQuestion");
@@ -75,12 +77,43 @@ var quizOptionsElement = document.getElementById("quizOptions");
 var quizResultElement = document.getElementById("quizResult");
 var quizNextButton = document.getElementById("quizNextButton");
 
+// COMMIT 8 - Timer variables + start screen and restart button
+var startScreen = document.getElementById("startScreen");
+var timerYesButton = document.getElementById("timerYes");
+var timerNoButton = document.getElementById("timerNo");
+var timerElement = document.getElementById("timer");
+var timerCountElement = document.getElementById("timerCount");
+var restartButton = document.getElementById("restartBtn");
+
+// COMMIT 8 - Show start screen
+
+function showStartScreen() {
+  quizQuestionElement.style.display = "none";
+  timerElement.style.display = "none";
+  quizNextButton.style.display = "none";
+  quizQuestionNumberElement.style.display = "none";
+  startScreen.style.display = "block";
+  quizResultElement.style.display = "none";
+  restartButton.style.display = "none";
+}
+
+function startGame() {
+  startScreen.style.display = "none";
+  timerElement.style.display = "block";
+  quizNextButton.style.display = "initial";
+  quizQuestionNumberElement.style.display = "block";
+  quizQuestionElement.style.display = "block";
+  loadQuestion();
+}
+
 // COMMIT 6 - Quiz panel UI
 
 function loadQuestion() {
   var q = trivia[currentQuestion];
   quizQuestionNumberElement.textContent = q.quizQuestionNumber;
   quizQuestionElement.textContent = q.quizQuestion;
+
+  quizOptionsElement.style.display = "block";
 
   quizOptionsElement.innerHTML = "";
   for (var i = 0; i < q.quizOptions.length; i++) {
@@ -92,6 +125,14 @@ function loadQuestion() {
 
   if (currentQuestion === trivia.length - 1) {
     quizNextButton.textContent = "Finish";
+  }
+
+  // COMMIT 8 - Show timer
+
+  if (timerEnabled) {
+    startTimer();
+  } else {
+    timerElement.style.display = "none";
   }
 }
 
@@ -120,6 +161,12 @@ function checkAnswer(event) {
     }
   }
 
+  // COMMIT 8 - Clear timer after answering
+
+  if (timerEnabled) {
+    clearInterval(timerInterval);
+  }
+
   currentQuestion++;
 
   if (currentQuestion < trivia.length + 1) {
@@ -134,10 +181,17 @@ function checkAnswer(event) {
 
 function showResults() {
   quizQuestionElement.style.display = "none";
-  quizOptionsElement.style.display = "none";
   quizNextButton.style.display = "none";
+  quizOptionsElement.style.display = "none";
+  quizQuestionNumberElement.style.display = "none";
+  timerElement.style.display = "none";
 
-  quizResultElement.textContent = "You scored " + score + " out of " + trivia.length + " quizQuestions.";
+  // COMMIT 8 - Allows the user to restart the game after completing.
+
+  quizResultElement.textContent = "You answered " + score + " out of " + trivia.length + " questions correct.";
+  restartButton.addEventListener("click", restartGame);
+  quizResultElement.style.display = "block";
+  restartButton.style.display = "block";
 }
 
 function nextQuestion() {
@@ -158,5 +212,64 @@ function nextQuestion() {
   }
 }
 
-loadQuestion();
+// COMMIT 8 - Adds ten second timer when timer mode is selected.
+
+function startTimer() {
+  var timeLeft = 10;
+  timerElement.style.display = "block";
+  timerCountElement.textContent = timeLeft;
+
+  timerInterval = setInterval(function() {
+    timeLeft--;
+    timerCountElement.textContent = timeLeft;
+
+    if (timeLeft <= 0) {
+      // COMMIT 8 - If time runs out, you cannot answer.
+      clearInterval(timerInterval);
+      quizResultElement.textContent = "Time's up! Incorrect!";
+      quizNextButton.disabled = false;
+
+      var buttons = quizOptionsElement.getElementsByTagName("button");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].disabled = true;
+        if (i === trivia[currentQuestion].answer) {
+          buttons[i].classList.add("correct");
+        }
+      }
+
+      currentQuestion++;
+
+      if (currentQuestion < trivia.length) {
+        quizNextButton.disabled = false;
+      } else {
+        showResults();
+      }
+    }
+  }, 1000);
+}
+
+// COMMIT 8 - Restart the game after completing.
+
+function restartGame() {
+  currentQuestion = 0;
+  score = 0;
+  quizNextButton.textContent = "Next";
+  showStartScreen();
+}
+
+
+// COMMIT 8 - Timer yes or no modes.
+timerYesButton.addEventListener("click", function() {
+  timerEnabled = true;
+  startGame();
+});
+
+timerNoButton.addEventListener("click", function() {
+  timerEnabled = false;
+  startGame();
+});
+
+
 quizNextButton.addEventListener("click", nextQuestion);
+
+showStartScreen();

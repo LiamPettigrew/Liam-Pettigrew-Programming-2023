@@ -35,11 +35,23 @@
 
           <!-- COMMIT 6 - Created the trial question box with ten questions, 4-choice answers, and shows your results at the end. Connected to Javascript -->
           <div class="quizContainer">
-            <p id="quizQuestionNumber"></p>
-            <p id="quizQuestion"></p>
-            <div id="quizOptions"></div>
-            <p id="quizResult"></p>
-            <button id="quizNextButton" disabled>Next</button>
+            <!-- COMMIT 8 - Timer and start screen -->
+            <div id="startScreen">
+              <h2>Starting...</h2>
+              <p>Please select your mode</p>
+              <button id="timerYes">Ten-second Timer</button>
+              <button id="timerNo">No Timer</button>
+            </div>
+            <div id="question">
+              <p id="quizQuestionNumber"></p>
+              <p id="quizQuestion"></p>
+              <div id="quizOptions"></div>
+              <p id="timer">Time Left: <span id="timerCount"></span></p>
+              <button id="quizNextButton" disabled>Next</button>
+              <p id="quizResult"></p>
+              <!-- COMMIT 8 - Restart game when completed.-->
+              <button id="restartBtn">Restart</button>
+            </div>
           </div>
 
 
