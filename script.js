@@ -84,6 +84,7 @@ var timerNoButton = document.getElementById("timerNo");
 var timerElement = document.getElementById("timer");
 var timerCountElement = document.getElementById("timerCount");
 var restartButton = document.getElementById("restartBtn");
+var timerIcon = document.getElementById("timerIcon");
 
 // COMMIT 8 - Show start screen
 
@@ -95,6 +96,7 @@ function showStartScreen() {
   startScreen.style.display = "block";
   quizResultElement.style.display = "none";
   restartButton.style.display = "none";
+  timerIcon.style.display = "none";
 }
 
 function startGame() {
@@ -103,6 +105,7 @@ function startGame() {
   quizNextButton.style.display = "initial";
   quizQuestionNumberElement.style.display = "block";
   quizQuestionElement.style.display = "block";
+  timerIcon.style.display = "block";
   loadQuestion();
 }
 
@@ -133,6 +136,7 @@ function loadQuestion() {
     startTimer();
   } else {
     timerElement.style.display = "none";
+    timerIcon.style.display = "none";
   }
 }
 
@@ -141,6 +145,8 @@ function loadQuestion() {
 function checkAnswer(event) {
   var selectedOption = event.target;
   var answerIndex = trivia[currentQuestion].answer;
+  quizResultElement.style.display = "block";
+  // COMMIT 9 - Fixed bug where the quiz wouldn't tell you if you got the questions correct or incorrect.
 
   if (selectedOption.textContent === trivia[currentQuestion].quizOptions[answerIndex]) {
     score++;
@@ -185,6 +191,7 @@ function showResults() {
   quizOptionsElement.style.display = "none";
   quizQuestionNumberElement.style.display = "none";
   timerElement.style.display = "none";
+  timerIcon.style.display = "none";
 
   // COMMIT 8 - Allows the user to restart the game after completing.
 
@@ -227,6 +234,7 @@ function startTimer() {
       // COMMIT 8 - If time runs out, you cannot answer.
       clearInterval(timerInterval);
       quizResultElement.textContent = "Time's up! Incorrect!";
+      quizResultElement.style.display = "block";
       quizNextButton.disabled = false;
 
       var buttons = quizOptionsElement.getElementsByTagName("button");
