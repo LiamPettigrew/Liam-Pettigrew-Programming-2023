@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<!-- COMMIT 3 - Created all of the HTML files for the quiz categories-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FreeTriviaSet.com</title>
+  <link href="../../style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="headerBigContainer">
+    <div class="logoContainer">
+      <p style="margin:0px;"><a href="../../index.html"><img class="logo" src="../../logo.png" href="../../index.html" alt="FreeTriviaSet.com" title="FreeTriviaSet.com"></a></p>
+    </div>
+    <div class="sloganContainer">
+      <p class="slogan">Multiple Categories  •  No Ads  •  No Signups!</p>
+    </div>
+      
+    <ul>
+      <li><a href="../../index.html" style="font-family:verdana;">Categories</a></li>
+      <li><a href="../../answers.html" style="font-family:verdana;">Answers</a></li>
+      <li><a href="../../about.html" style="font-family:verdana;">About</a></li>
+    </ul>
+  </div>
+
+  <!-- COMMIT 9 - Added a "back to categories" button -->
+
+  <div class="backToCategories"><img src="../../backArrow.png" class="backArrow"><a href="../../index.html" class="backToCategoriesText">Back to Categories</a></div>
+  <br>
+  <br>
+
+  <!-- COMMIT 4 - Created the levels 1 to 3 for all ten of the category sites -->
+
+  <!-- COMMIT 9 - Added the quiz UI to level 1 of all category pages -->
+
+  <div class="box">
+      <p class="heading" style="background-color:#9f1515;">Flags</p>
+      <div class="boxContents">
+
+        <!-- COMMIT 6 - Created the trial question box with ten questions, 4-choice answers, and shows your results at the end. Connected to Javascript -->
+        <div class="quizContainer">
+          <!-- COMMIT 8 - Timer and start screen -->
+          <div id="startScreen">
+            <h2>Starting...</h2>
+            <!-- COMMIT 10 - Added the difficulty selection to the start screen -->
+            <!-- COMMIT 10 - The quiz now has three levels of functioning trivia per category, with individual script files -->
+            <p>Choose a difficulty level between 1 and 3</p>
+            <select id="difficultyLevel">
+              <option value="1">Level 1</option>
+              <option value="2">Level 2</option>
+              <option value="3">Level 3</option>
+            </select>
+            <p>Please select your mode</p>
+            <button id="timerYes">Ten-second Timer</button>
+            <button id="timerNo">No Timer</button>
+          </div>
+          <div id="question">
+            <p id="quizQuestionNumber"></p>
+            <p id="quizQuestion"></p>
+            <div id="quizOptions"></div>
+            <!-- COMMIT 9 - Added a timer icon for the 10-second mode -->
+            <div class="timerContainer"><img src="../../timerIcon.png" id="timerIcon"><p id="timer">Time Left: <span id="timerCount"></span></p></div>
+            <button id="quizNextButton" disabled>Next</button>
+            <p id="quizResult"></p>
+            <!-- COMMIT 8 - Restart game when completed.-->
+            <button id="restartBtn">Restart</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  
+
+
+  <div id="footer">
+    <div class="footer1">
+      <p class="footerwording">This website was created to offer a range of free trivia quizzes with no signup, no advertisements, and no subscriptions! This is not the official domain for "freetriviaset.com".</p>
+      <p class="footerwording"><a href="../../index.html" class="footerLink" title="Categories">Homepage</a> • <a href="../../answers.html" class="footerLink" title="View the answers.">Answers</a> • <a href="../../about.html" class="footerLink" title="About Us">About</a></p>
+    </div>
+    <div class="footer2">
+      <p class="footerwording">This website was designed by Liam Pettigrew, for Fraser High School</p>
+      <p class ="footerwording">© 2023 Liam Pettigrew - All rights reserved</p>
+    </div>
+  </div>
+  
+  <script src="flagsScript.js"></script>
+</body>
+
+</html>

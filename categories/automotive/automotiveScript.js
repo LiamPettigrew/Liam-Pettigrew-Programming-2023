@@ -1,70 +1,199 @@
 // COMMIT 6 - Quiz Functionality
 
 // COMMIT 6 - Array to store the trivia quizQuestions and answers
-var trivia = [
-  {
-    quizQuestionNumber: "Question 1 of 10",
-    quizQuestion: "Quiz question",
-    quizOptions: ["A", "B", "C", "D"],
-    answer: 0
-  },
-  {
-    quizQuestionNumber: "Question 2 of 10",
-    quizQuestion: "Quiz question",
-    quizOptions: ["A", "B", "C", "D"],
-    answer: 0
-  },
-  {
-    quizQuestionNumber: "Question 3 of 10",
-    quizQuestion: "Quiz question",
-    quizOptions: ["A", "B", "C", "D"],
-    answer: 0
-  },
-  {
-    quizQuestionNumber: "Question 4 of 10",
-    quizQuestion: "Quiz question",
-    quizOptions: ["A", "B", "C", "D"],
-    answer: 0
-  },
-  {
-    quizQuestionNumber: "Question 5 of 10",
-    quizQuestion: "Quiz question",
-    quizOptions: ["A", "B", "C", "D"],
-    answer: 0
-  },
-  {
-    quizQuestionNumber: "Question 6 of 10",
-    quizQuestion: "Quiz question",
-    quizOptions: ["A", "B", "C", "D"],
-    answer: 0
-  },
-  {
-    quizQuestionNumber: "Question 7 of 10",
-    quizQuestion: "Quiz question",
-    quizOptions: ["A", "B", "C", "D"],
-    answer: 0
-  },
-  {
-    quizQuestionNumber: "Question 8 of 10",
-    quizQuestion: "Quiz question",
-    quizOptions: ["A", "B", "C", "D"],
-    answer: 0
-  },
-  {
-    quizQuestionNumber: "Question 9 of 10",
-    quizQuestion: "Quiz question",
-    quizOptions: ["A", "B", "C", "D"],
-    answer: 0
-  },
-  {
-    quizQuestionNumber: "Question 10 of 10",
-    quizQuestion: "Quiz question",
-    quizOptions: ["A", "B", "C", "D"],
-    answer: 0
-  }
-];
+// COMMIT 10 - Three levels of difficulty questions and answers per category.
+var trivia = {
+  1: [
+    {
+      quizQuestionNumber: "Question 1 of 10",
+      quizQuestion: "Quiz question l1",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 2 of 10",
+      quizQuestion: "Quiz questionl12",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 3 of 10",
+      quizQuestion: "Quiz questionl13",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 4 of 10",
+      quizQuestion: "Quiz questionl14",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 5 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 6 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 7 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 8 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 9 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 10 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+  ],
+  2: [
+    {
+      quizQuestionNumber: "Question 1 of 10",
+      quizQuestion: "Quiz question l2",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 2 of 10",
+      quizQuestion: "Quiz questionl22",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 3 of 10",
+      quizQuestion: "Quiz questionl23",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 4 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 5 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 6 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 7 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 8 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 9 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 10 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+  ],
+  3: [
+    {
+      quizQuestionNumber: "Question 1 of 10",
+      quizQuestion: "Quiz question l3",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 2 of 10",
+      quizQuestion: "Quiz question3l2",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 3 of 10",
+      quizQuestion: "Quiz questionl33",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 4 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 5 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 6 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 7 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 8 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 9 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+    {
+      quizQuestionNumber: "Question 10 of 10",
+      quizQuestion: "Quiz question",
+      quizOptions: ["A", "B", "C", "D"],
+      answer: 0
+    },
+  ],
+};
 
 // COMMIT 6 - Variables
+
+var selectedDifficulty;
 
 var currentQuestion = 0;
 var score = 0;
@@ -86,6 +215,9 @@ var timerCountElement = document.getElementById("timerCount");
 var restartButton = document.getElementById("restartBtn");
 var timerIcon = document.getElementById("timerIcon");
 
+// COMMIT 10 - Difficulty selection
+var difficultyLevelSelect = document.getElementById("difficultyLevel");
+
 // COMMIT 8 - Show start screen
 
 function showStartScreen() {
@@ -100,6 +232,7 @@ function showStartScreen() {
 }
 
 function startGame() {
+  
   startScreen.style.display = "none";
   timerElement.style.display = "block";
   quizNextButton.style.display = "initial";
@@ -112,7 +245,7 @@ function startGame() {
 // COMMIT 6 - Quiz panel UI
 
 function loadQuestion() {
-  var q = trivia[currentQuestion];
+  var q = trivia[selectedDifficulty][currentQuestion];
   quizQuestionNumberElement.textContent = q.quizQuestionNumber;
   quizQuestionElement.textContent = q.quizQuestion;
 
@@ -126,7 +259,7 @@ function loadQuestion() {
     quizOptionsElement.appendChild(quizButton);
   }
 
-  if (currentQuestion === trivia.length - 1) {
+  if (currentQuestion === trivia[selectedDifficulty].length - 1) {
     quizNextButton.textContent = "Finish";
   }
 
@@ -144,11 +277,11 @@ function loadQuestion() {
 
 function checkAnswer(event) {
   var selectedOption = event.target;
-  var answerIndex = trivia[currentQuestion].answer;
+  var answerIndex = trivia[selectedDifficulty][currentQuestion].answer;
   quizResultElement.style.display = "block";
   // COMMIT 9 - Fixed bug where the quiz wouldn't tell you if you got the questions correct or incorrect.
 
-  if (selectedOption.textContent === trivia[currentQuestion].quizOptions[answerIndex]) {
+  if (selectedOption.textContent === trivia[selectedDifficulty][currentQuestion].quizOptions[answerIndex]) {
     score++;
     quizResultElement.textContent = "Correct!";
     selectedOption.classList.add("correct");
@@ -175,7 +308,7 @@ function checkAnswer(event) {
 
   currentQuestion++;
 
-  if (currentQuestion < trivia.length + 1) {
+  if (currentQuestion < trivia[selectedDifficulty].length + 1) {
     quizNextButton.disabled = false;
   } else {
     showResults();
@@ -195,14 +328,14 @@ function showResults() {
 
   // COMMIT 8 - Allows the user to restart the game after completing.
 
-  quizResultElement.textContent = "You answered " + score + " out of " + trivia.length + " questions correct.";
+  quizResultElement.textContent = "You answered " + score + " out of " + trivia[selectedDifficulty].length + " questions correct.";
   restartButton.addEventListener("click", restartGame);
   quizResultElement.style.display = "block";
   restartButton.style.display = "block";
 }
 
 function nextQuestion() {
-  if (currentQuestion < trivia.length) {
+  if (currentQuestion < trivia[selectedDifficulty].length) {
     loadQuestion();
     quizNextButton.disabled = true;
     
@@ -240,14 +373,14 @@ function startTimer() {
       var buttons = quizOptionsElement.getElementsByTagName("button");
       for (var i = 0; i < buttons.length; i++) {
         buttons[i].disabled = true;
-        if (i === trivia[currentQuestion].answer) {
+        if (i === trivia[selectedDifficulty][currentQuestion].answer) {
           buttons[i].classList.add("correct");
         }
       }
 
       currentQuestion++;
 
-      if (currentQuestion < trivia.length) {
+      if (currentQuestion < trivia[selectedDifficulty].length) {
         quizNextButton.disabled = false;
       } else {
         showResults();
@@ -261,6 +394,9 @@ function startTimer() {
 function restartGame() {
   currentQuestion = 0;
   score = 0;
+  // COMMIT 10 - Fixed bug where timer would still be enabled after completing quiz.
+  clearInterval(timerInterval);
+  quizNextButton.disabled = true;
   quizNextButton.textContent = "Next";
   showStartScreen();
 }
@@ -269,15 +405,18 @@ function restartGame() {
 // COMMIT 8 - Timer yes or no modes.
 timerYesButton.addEventListener("click", function() {
   timerEnabled = true;
+  selectedDifficulty = difficultyLevelSelect.value;
   startGame();
 });
 
 timerNoButton.addEventListener("click", function() {
   timerEnabled = false;
+  selectedDifficulty = difficultyLevelSelect.value;
   startGame();
 });
 
 
 quizNextButton.addEventListener("click", nextQuestion);
+restartButton.addEventListener("click", restartGame);
 
 showStartScreen();

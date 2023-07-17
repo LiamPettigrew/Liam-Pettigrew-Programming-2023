@@ -284,14 +284,13 @@ li a:hover {
 .box {
   width: 90%;
   margin: 60px auto;
-  background: #fff;
-  border-radius: 7px;
+  background: #f2f2f2;
   box-shadow: 1px 2px 4px rgba(0,0,0,.3);
-  border-radius: 0px 0px 14px 0px;
+  border-radius: 14px 14px 14px 14px;
 }
 
 .box .heading {
-  border-radius: 14px 0px 0px 0px;
+  border-radius: 14px 14px 0px 0px;
   padding: 10px;
   color: #fff;
   text-align: center;
