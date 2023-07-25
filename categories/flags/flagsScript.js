@@ -12,7 +12,7 @@ var trivia = {
     },
     {
       quizQuestionNumber: "Question 2 of 10",
-      quizQuestion: "Quiz questionl12",
+      quizQuestion: "Quiz question",
       quizOptions: ["A", "B", "C", "D"],
       answer: 0
     },

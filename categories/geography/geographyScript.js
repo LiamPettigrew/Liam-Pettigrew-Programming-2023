@@ -2,190 +2,192 @@
 
 // COMMIT 6 - Array to store the trivia quizQuestions and answers
 // COMMIT 10 - Three levels of difficulty questions and answers per category.
+
+// COMMIT 11 - Added quiz questions and answers.
 var trivia = {
   1: [
     {
       quizQuestionNumber: "Question 1 of 10",
-      quizQuestion: "Quiz question l1",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What continent is Turkey in?",
+      quizOptions: ["A) Asia", "B) Asia and Europe", "C) Europe", "D) Africa"],
+      answer: 1
     },
     {
       quizQuestionNumber: "Question 2 of 10",
-      quizQuestion: "Quiz questionl12",
-      quizOptions: ["A", "B", "C", "D"],
+      quizQuestion: "What continent is Afghanistan in?",
+      quizOptions: ["A) Asia", "B) Asia and Europe", "C) Europe", "D) South America"],
       answer: 0
     },
     {
       quizQuestionNumber: "Question 3 of 10",
-      quizQuestion: "Quiz questionl13",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What continent is Madagascar in?",
+      quizOptions: ["A) Asia", "B) Africa", "C) Oceania", "D) South America"],
+      answer: 1
     },
     {
       quizQuestionNumber: "Question 4 of 10",
-      quizQuestion: "Quiz questionl14",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What continent is Costa Rica in?",
+      quizOptions: ["A) Africa", "B) Oceania", "C) South America", "D) North America"],
+      answer: 3
     },
     {
       quizQuestionNumber: "Question 5 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What continent is Slovakia in?",
+      quizOptions: ["A) Africa", "B) Asia", "C) Europe", "D) South America"],
+      answer: 2
     },
     {
       quizQuestionNumber: "Question 6 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What is the capital city of Australia?",
+      quizOptions: ["A) Sydney", "B) Canberra", "C) Brisbane", "D) Melbourne"],
+      answer: 1
     },
     {
       quizQuestionNumber: "Question 7 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What is the capital city of Germany?",
+      quizOptions: ["A) Hamburg", "B) Frankfurt", "C) Amsterdam", "D) Berlin"],
+      answer: 3
     },
     {
       quizQuestionNumber: "Question 8 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
+      quizQuestion: "What is the capital city of Taiwan?",
+      quizOptions: ["A) Taipei", "B) Shanghai", "C) Hong Kong", "D) Beijing"],
       answer: 0
     },
     {
       quizQuestionNumber: "Question 9 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What is the capital city of Canada?",
+      quizOptions: ["A) Montreal", "B) Ottawa", "C) Toronto", "D) Vancouver"],
+      answer: 1
     },
     {
       quizQuestionNumber: "Question 10 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What is the capital city of Sweden?",
+      quizOptions: ["A) Gothenburg", "B) Helsinki", "C) Stockholm", "D) Oslo"],
+      answer: 2
     },
   ],
   2: [
     {
       quizQuestionNumber: "Question 1 of 10",
-      quizQuestion: "Quiz question l2",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What continent is Liberia in?",
+      quizOptions: ["A) Oceania", "B) Europe", "C) South America", "D) Africa"],
+      answer: 3
     },
     {
       quizQuestionNumber: "Question 2 of 10",
-      quizQuestion: "Quiz questionl22",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What continent is Uruguay in?",
+      quizOptions: ["A) Europe", "B) Asia", "C) South America", "D) Africa"],
+      answer: 2
     },
     {
       quizQuestionNumber: "Question 3 of 10",
-      quizQuestion: "Quiz questionl23",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What continent is Brunei in?",
+      quizOptions: ["A) Europe", "B) Asia", "C) South America", "D) Africa"],
+      answer: 1
     },
     {
       quizQuestionNumber: "Question 4 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What state in the U.S.A. is Chicago in?",
+      quizOptions: ["A) Michigan", "B) Ohio", "C) Minnesota", "D) Illinois"],
+      answer: 3
     },
     {
       quizQuestionNumber: "Question 5 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
+      quizQuestion: "What state in the U.S.A. is New Orleans in?",
+      quizOptions: ["A) Louisiana", "B) Texas", "C) Arkansas", "D) Oklahoma"],
       answer: 0
     },
     {
       quizQuestionNumber: "Question 6 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
+      quizQuestion: "What state in the U.S.A. is Kansas City in?",
+      quizOptions: ["A) Missouri", "B) Iowa", "C) Kansas", "D) Nebraska"],
       answer: 0
     },
     {
       quizQuestionNumber: "Question 7 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "British Columbia is a district/provence in which country?",
+      quizOptions: ["A) Columbia", "B) England", "C) Canada", "D) Australia"],
+      answer: 2
     },
     {
       quizQuestionNumber: "Question 8 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What is the capital city of Vietnam?",
+      quizOptions: ["A) Bangkok", "B) Hanoi", "C) Ho Chi Minh City", "D) Vientiane"],
+      answer: 1
     },
     {
       quizQuestionNumber: "Question 9 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "Kathmandu is the capital city of which country?",
+      quizOptions: ["A) Bangladesh", "B) Mongolia", "C) Kazakhstan", "D) Nepal"],
+      answer: 3
     },
     {
       quizQuestionNumber: "Question 10 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "Which one of these ISN'T a capital city of South Africa?",
+      quizOptions: ["A) Pretoria", "B) Cape Town", "C) Gaborone", "D) Bloemfontein"],
+      answer: 2
     },
   ],
   3: [
     {
       quizQuestionNumber: "Question 1 of 10",
-      quizQuestion: "Quiz question l3",
-      quizOptions: ["A", "B", "C", "D"],
+      quizQuestion: "Which country has the longest coastline?",
+      quizOptions: ["A) Canada", "B) Brazi", "C) Russia", "D) Chile"],
       answer: 0
     },
     {
       quizQuestionNumber: "Question 2 of 10",
-      quizQuestion: "Quiz question3l2",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "Which one of the following countries is not on the Baltic sea?",
+      quizOptions: ["A) Germany", "B) Latvia", "C) Lithuania", "D) Belarus"],
+      answer: 3
     },
     {
       quizQuestionNumber: "Question 3 of 10",
-      quizQuestion: "Quiz questionl33",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "In which country can you find the islands of Saaremaa and Hiiumaa?",
+      quizOptions: ["A) Norway", "B) Finland", "C) Estonia", "D) Denmark"],
+      answer: 2
     },
     {
       quizQuestionNumber: "Question 4 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "Little Havana and Little Haiti are districts of which city?",
+      quizOptions: ["A) Los Angeles", "B) Miami", "C) New York", "D) San Francisco"],
+      answer: 1
     },
     {
       quizQuestionNumber: "Question 5 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What are two countries that Brazil does NOT share a border with.",
+      quizOptions: ["A) Ecuador and Peru", "B) Guyana and Venezuela", "C) Uruguay and Argentina", "D) Chile and Ecuador"],
+      answer: 3
     },
     {
       quizQuestionNumber: "Question 6 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "Which is the world's deepest lake?",
+      quizOptions: ["A) Vostok (Antartica)", "B) Baikal (Russia)", "C) Issyk-Kul (Kyrgyzstan)", "D) Tanganyika (Africa)"],
+      answer: 1
     },
     {
       quizQuestionNumber: "Question 7 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
+      quizQuestion: "Which is the world's largest inland body of water?",
+      quizOptions: ["A) Caspian Sea", "B) Gulf of Mexico", "C) Black Sea", "D) Lake Superior"],
       answer: 0
     },
     {
       quizQuestionNumber: "Question 8 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "The ancient city Byblos is located in which country?",
+      quizOptions: ["A) Jordan", "B) Greece", "C) Lebanon", "D) Egypt"],
+      answer: 2
     },
     {
       quizQuestionNumber: "Question 9 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "How many time zones does Australia have?",
+      quizOptions: ["A) One", "B) Three", "C) Five", "D) Eight"],
+      answer: 1
     },
     {
       quizQuestionNumber: "Question 10 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
+      quizQuestion: "What is the least populated U.S. state?",
+      quizOptions: ["A) Wyoming", "B) Alaska", "C) Utah", "D) Rhode Island"],
       answer: 0
     },
   ],

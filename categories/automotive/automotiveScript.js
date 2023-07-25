@@ -2,129 +2,131 @@
 
 // COMMIT 6 - Array to store the trivia quizQuestions and answers
 // COMMIT 10 - Three levels of difficulty questions and answers per category.
+
+// COMMIT 11 - Added quiz questions and answers.
 var trivia = {
   1: [
     {
       quizQuestionNumber: "Question 1 of 10",
-      quizQuestion: "Quiz question l1",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "The Sentra, Altima, and Pathfinder are all car models made by what maker?",
+      quizOptions: ["A) Ford", "B) Honda", "C) Nissan", "D) Toyota"],
+      answer: 2
     },
     {
       quizQuestionNumber: "Question 2 of 10",
-      quizQuestion: "Quiz questionl12",
-      quizOptions: ["A", "B", "C", "D"],
+      quizQuestion: "Lexus is a luxury car brand owned by which parent maker",
+      quizOptions: ["A) Toyota", "B) Honda", "C) Hyaundai", "D) Mazda"],
       answer: 0
     },
     {
       quizQuestionNumber: "Question 3 of 10",
-      quizQuestion: "Quiz questionl13",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "The Impreza is a car model made by what maker?",
+      quizOptions: ["A) Toyota", "B) Subaru", "C) Holden", "D) Kia"],
+      answer: 1
     },
     {
       quizQuestionNumber: "Question 4 of 10",
-      quizQuestion: "Quiz questionl14",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What country are Tesla cars mainly manufactured in?",
+      quizOptions: ["A) Japan", "B) China", "C) United Kingdom", "D) United States"],
+      answer: 3
     },
     {
       quizQuestionNumber: "Question 5 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "Where does Volkswagen originate from?",
+      quizOptions: ["A) United Kingdom", "B) France", "C) Germany", "D) Italy"],
+      answer: 2
     },
     {
       quizQuestionNumber: "Question 6 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "Acura is a car brand manufactured by which parent maker?",
+      quizOptions: ["A) Nissan", "B) Honda", "C) BMW", "D) Audi"],
+      answer: 1
     },
     {
       quizQuestionNumber: "Question 7 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
+      quizQuestion: "What is the name of the motorway system in Germany?",
+      quizOptions: ["A) Autobahn", "B) Germany Carriageway", "C) Westschnellweg", "D) Industrieweg"],
       answer: 0
     },
     {
       quizQuestionNumber: "Question 8 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What is the speed limit of the Autobahn?",
+      quizOptions: ["A) 100km/h", "B) 130km/h", "C) 150km/h", "D) No limit"],
+      answer: 3
     },
     {
       quizQuestionNumber: "Question 9 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What is the world’s all-time best selling car?",
+      quizOptions: ["A) Volkswagen Beetle", "B) Toyota Corolla", "C) Honda Accord", "D) Ford Model T"],
+      answer: 1
     },
     {
       quizQuestionNumber: "Question 10 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "In which year did Henry Ford establish the Ford Motor Company?",
+      quizOptions: ["A) 1886", "B) 1896", "C) 1903", "D) 1911"],
+      answer: 2
     },
   ],
   2: [
     {
       quizQuestionNumber: "Question 1 of 10",
-      quizQuestion: "Quiz question l2",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What does BMW stand for?",
+      quizOptions: ["A) Berlin Motor Wagons", "B) Bielefeld Motor Wagons", "C) Berlin Mobile Works", "D) Bavarian Motor Works"],
+      answer: 3
     },
     {
       quizQuestionNumber: "Question 2 of 10",
-      quizQuestion: "Quiz questionl22",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "Founded in 1883, what is the oldest car company still in business today?",
+      quizOptions: ["A) Mitsubishi Motors", "B) Mercedes-Benz", "C) BMW", "D) Cadillac"],
+      answer: 1
     },
     {
       quizQuestionNumber: "Question 3 of 10",
-      quizQuestion: "Quiz questionl23",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "Who bought Rolls Royce in 1998?",
+      quizOptions: ["A) Audi", "B) General Motors", "C) BMW", "D) Ferrari"],
+      answer: 2
     },
     {
       quizQuestionNumber: "Question 4 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
+      quizQuestion: "Which is NOT a brand within the General Motors car company?",
+      quizOptions: ["A) Ford", "B) Chevrolet", "C) Cadillac", "D) Buick"],
       answer: 0
     },
     {
       quizQuestionNumber: "Question 5 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What is the most popular car color?",
+      quizOptions: ["A) Grey", "B) Black", "C) White", "D) Silver"],
+      answer: 2
     },
     {
       quizQuestionNumber: "Question 6 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "Dodge’s logo is of what animal?",
+      quizOptions: ["A) Bull", "B) Horse", "C) Pony", "D) Ram"],
+      answer: 3
     },
     {
       quizQuestionNumber: "Question 7 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What was the first American-produced Japanese car?",
+      quizOptions: ["A) Toyota Corolla", "B) Honda Accord", "C) Nissan Qashqai", "D) Mitsubishi Lancer"],
+      answer: 1
     },
     {
       quizQuestionNumber: "Question 8 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
+      quizQuestion: "What country is Kia based in?",
+      quizOptions: ["A) South Korea", "B) Japan", "C) China", "D) Vietnam"],
       answer: 0
     },
     {
       quizQuestionNumber: "Question 9 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "What luxury car brand has a “Spirit of Ecstacy” hood ornament?",
+      quizOptions: ["A) Ferrari", "B) Mercedes-Benz", "C) Audi", "D) Rolls Royce"],
+      answer: 3
     },
     {
       quizQuestionNumber: "Question 10 of 10",
-      quizQuestion: "Quiz question",
-      quizOptions: ["A", "B", "C", "D"],
-      answer: 0
+      quizQuestion: "The world’s first electric traffic light was installed in 1914 in which U.S. city?",
+      quizOptions: ["A) Chicago", "B) San Francisco", "C) Cleveland", "D) Kansas City"],
+      answer: 2
     },
   ],
   3: [
