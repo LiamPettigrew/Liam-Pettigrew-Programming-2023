@@ -423,3 +423,15 @@ button:hover {
   justify-content: center;
   display: flex;
 }
+
+
+
+
+/* about.html */
+
+.about {
+  text-align: center;
+  font-family: verdana;
+  margin: 40px;
+  display: block;
+}
